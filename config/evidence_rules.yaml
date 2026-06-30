@@ -1,0 +1,17 @@
+assessment_rules:
+  expert_contradiction_threshold: 0.40
+  intermediate_contradiction_threshold: 0.20
+
+timeline_rules:
+  max_overlap_months: 3
+
+skill_duration_rules:
+  overflow_ratio: 1.5
+
+trust_adjustments:
+  skill_without_career_corroboration: 0.40
+  skill_with_career_corroboration:    0.90
+  career_with_assessment_support:     0.95
+  career_without_assessment:          0.80
+  summary_uncorroborated:             0.50
+  assessment_alone:                   0.70

@@ -1,0 +1,30 @@
+clusters:
+  - cluster_id: "core_ai_ml"
+    name: "Core AI/ML Engineering"
+    weight: 0.40
+    req_ids:
+      - "req_001"
+      - "req_002"
+      - "req_003"
+      - "req_004"
+
+  - cluster_id: "applied_llm"
+    name: "Applied LLM and Generative AI"
+    weight: 0.30
+    req_ids:
+      - "req_005"
+      - "req_006"
+      - "req_007"
+
+  - cluster_id: "engineering_practices"
+    name: "Engineering Practices and Infrastructure"
+    weight: 0.20
+    req_ids:
+      - "req_008"
+      - "req_009"
+
+  - cluster_id: "domain_experience"
+    name: "Domain and Industry Experience"
+    weight: 0.10
+    req_ids:
+      - "req_010"

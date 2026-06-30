@@ -1,0 +1,25 @@
+depth_definitions:
+  L0:
+    description: "No evidence found for this requirement"
+    examples:
+      - "No mention in any field"
+
+  L1:
+    description: "Skill listing only, no supporting context"
+    examples:
+      - "Listed as a skill with no career or project context"
+      - "Mentioned in summary without corroboration"
+
+  L2:
+    description: "Project or summary evidence present"
+    examples:
+      - "Personal project description mentions requirement"
+      - "Summary describes relevant capability"
+      - "Non-production context"
+
+  L3:
+    description: "Professional production career evidence"
+    examples:
+      - "Career history role description directly mentions requirement"
+      - "Multiple career entries demonstrate ongoing use"
+      - "Professional context, sustained duration"
