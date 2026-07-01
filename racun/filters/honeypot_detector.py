@@ -48,10 +48,11 @@ class HoneypotDetector:
         parsed = []
 
         for entry in career_history:
-            if entry.is_current:
-                continue
             start = self._parse_date(entry.start_date)
-            end = self._parse_date(entry.end_date)
+            if entry.is_current:
+                end = datetime.now()
+            else:
+                end = self._parse_date(entry.end_date)
             if start and end:
                 parsed.append((start, end))
 

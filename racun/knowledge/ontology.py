@@ -19,6 +19,8 @@ class ConceptOntology:
                     self._synonym_to_canonical[normalized_syn] = canonical
                     self._canonical_to_synonyms[canonical].append(normalized_syn)
 
+        self._sorted_terms = sorted(self._synonym_to_canonical.keys(), key=len, reverse=True)
+
     def normalize(self, term: str) -> Optional[str]:
         term_lower = term.lower().strip()
         return self._synonym_to_canonical.get(term_lower)
@@ -37,8 +39,7 @@ class ConceptOntology:
         text_lower = text.lower()
         found = set()
 
-        sorted_terms = sorted(self._synonym_to_canonical.keys(), key=len, reverse=True)
-        for term in sorted_terms:
+        for term in self._sorted_terms:
             if term in text_lower:
                 canonical = self._synonym_to_canonical[term]
                 found.add(canonical)

@@ -33,6 +33,7 @@ class Preprocessor:
         jd_path: str,
         candidates_path: str,
         cache_dir: str,
+        progress_callback = None,
     ) -> None:
         cache_path = Path(cache_dir)
         cache_path.mkdir(parents=True, exist_ok=True)
@@ -55,6 +56,7 @@ class Preprocessor:
             opener = open(candidates_path, "rt", encoding="utf-8")
 
         with opener as f:
+            processed_count = 0
             for line in tqdm(f, desc="Preprocessing"):
                 if not line.strip():
                     continue
@@ -67,22 +69,25 @@ class Preprocessor:
                 is_honeypot, flags = self.honeypot_detector.detect(profile)
                 if is_honeypot:
                     honeypot_ids.add(profile.candidate_id)
-                    continue
-
-                evidence = self.ev_extractor.extract(profile)
-                normalized_evidence = self.normalizer.normalize_all(evidence)
+                else:
+                    evidence = self.ev_extractor.extract(profile)
+                    normalized_evidence = self.normalizer.normalize_all(evidence)
+                    evidence_dict[profile.candidate_id] = normalized_evidence
                 
-                evidence_dict[profile.candidate_id] = normalized_evidence
+                processed_count += 1
+                if progress_callback:
+                    progress_callback(processed_count)
 
         self.logger.info("Saving artifacts to cache...")
         
-        with open(cache_path / "candidates.pkl", "wb") as f:
-            pickle.dump(candidates, f)
+        from racun.pipeline.pickle_helper import save_pickle_stream
+        
+        save_pickle_stream(candidates, cache_path / "candidates.pkl")
             
-        with open(cache_path / "evidence.pkl", "wb") as f:
-            pickle.dump(evidence_dict, f)
+        save_pickle_stream(evidence_dict, cache_path / "evidence.pkl")
             
         with open(cache_path / "honeypot_ids.pkl", "wb") as f:
             pickle.dump(honeypot_ids, f)
 
         self.logger.info("Preprocessing complete.")
+

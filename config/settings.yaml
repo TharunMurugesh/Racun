@@ -1,65 +1,55 @@
-depth_weights:
-  L0: 0.00
-  L1: 0.25
-  L2: 0.60
-  L3: 1.00
-
-hierarchy_weights:
-  CAREER:       1.00
-  SUMMARY:      0.50
-  SKILL:        0.25
-  ASSESSMENT:   0.40
-  EDUCATION:    0.15
-  CERTIFICATION: 0.20
-
-satisfaction_scores:
-  SATISFIED:           1.00
-  PARTIALLY_SATISFIED: 0.60
-  WEAKLY_SATISFIED:    0.25
-  NOT_SATISFIED:       0.00
-
-satisfaction_thresholds:
-  satisfied:
-    min_depth:       3
-    min_strength:    0.65
-    min_consistency: 0.65
-  partially_satisfied:
-    min_depth:       2
-    min_strength:    0.45
-    min_consistency: 0.45
-  weakly_satisfied:
-    min_depth:       1
-    min_strength:    0.20
-
-gate_modifiers:
-  all_mandatory_met:   1.00
-  partially_met:       0.75
-  weakly_met:          0.55
-  mandatory_not_met:   0.40
-
-integrity:
-  penalty_per_flag:    0.10
-  floor:               0.60
-
 behavior:
-  max_upside:          1.10
-  max_downside:        0.85
-
+  max_downside: 0.85
+  max_upside: 1.1
+depth_weights:
+  L0: 0
+  L1: 0.25
+  L2: 0.6
+  L3: 1
+gate_modifiers:
+  all_mandatory_met: 1
+  mandatory_not_met: 0.4
+  partially_met: 0.75
+  weakly_met: 0.55
+hierarchy_weights:
+  ASSESSMENT: 0.4
+  CAREER: 1
+  CERTIFICATION: 0.2
+  EDUCATION: 0.15
+  SKILL: 0.25
+  SUMMARY: 0.5
 honeypot:
-  flag_threshold:          2
-  skill_overflow_ratio:    1.5
-  expert_assessment_floor: 0.40
+  expert_assessment_floor: 0.35
+  flag_threshold: 2
   min_unsupported_experts: 5
-
-recency:
-  current_role_score:  1.00
-  decay_per_year:      0.08
-  floor:               0.40
-
+  skill_overflow_ratio: 1.7
+integrity:
+  floor: 0.6
+  penalty_per_flag: 0.1
 prefilter:
-  enabled:     false
-  keep_top_k:  5000
-
+  enabled: true
+  keep_top_k: 5000
+recency:
+  current_role_score: 1
+  decay_per_year: 0.08
+  floor: 0.4
+satisfaction_scores:
+  NOT_SATISFIED: 0
+  PARTIALLY_SATISFIED: 0.6
+  SATISFIED: 1
+  WEAKLY_SATISFIED: 0.25
+satisfaction_thresholds:
+  partially_satisfied:
+    min_consistency: 0.45
+    min_depth: 2
+    min_strength: 0.45
+  satisfied:
+    min_consistency: 0.65
+    min_depth: 3
+    min_strength: 0.65
+  weakly_satisfied:
+    min_depth: 1
+    min_strength: 0.2
 submission:
-  top_k:       100
-  output_path: "submission.csv"
+  output_path: submission.csv
+  top_k: 100

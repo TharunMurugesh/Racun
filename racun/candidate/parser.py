@@ -16,10 +16,11 @@ logger = logging.getLogger(__name__)
 class CandidateParser:
 
     def parse(self, record: Dict[str, Any]) -> CandidateProfile:
+        profile = record.get("profile") or {}
         candidate_id = self._str(record.get("candidate_id") or record.get("id"), "unknown")
-        name = self._str(record.get("name"), "")
-        summary = self._str(record.get("summary") or record.get("bio") or record.get("about"), "")
-        years_experience = self._float(record.get("years_experience") or record.get("total_experience"), 0.0)
+        name = self._str(record.get("name") or profile.get("anonymized_name") or profile.get("name"), "")
+        summary = self._str(record.get("summary") or profile.get("summary") or record.get("bio") or record.get("about"), "")
+        years_experience = self._float(record.get("years_experience") or profile.get("years_of_experience") or record.get("total_experience"), 0.0)
 
         career_history = self._parse_career(record)
         skills = self._parse_skills(record)
@@ -93,10 +94,13 @@ class CandidateParser:
                     name = self._str(item.get("name") or item.get("skill"), "")
                     if not name:
                         continue
+                    years_val = self._float(item.get("years") or item.get("experience_years"), None)
+                    if years_val is None and item.get("duration_months") is not None:
+                        years_val = self._float(item.get("duration_months"), 0) / 12.0
                     skills.append(Skill(
                         name=name,
                         normalized="",
-                        years=self._float(item.get("years") or item.get("experience_years"), None),
+                        years=years_val,
                         proficiency=self._str(item.get("proficiency") or item.get("level"), None),
                     ))
             except Exception as e:
@@ -116,9 +120,9 @@ class CandidateParser:
             try:
                 education.append(Education(
                     degree=self._str(item.get("degree") or item.get("qualification"), ""),
-                    field=self._str(item.get("field") or item.get("major") or item.get("subject"), ""),
+                    field=self._str(item.get("field") or item.get("field_of_study") or item.get("major") or item.get("subject"), ""),
                     institution=self._str(item.get("institution") or item.get("university") or item.get("school"), ""),
-                    year=self._int(item.get("year") or item.get("graduation_year"), None),
+                    year=self._int(item.get("year") or item.get("end_year") or item.get("graduation_year") or item.get("start_year"), None),
                 ))
             except Exception as e:
                 logger.warning(f"Failed to parse education: {e}")
@@ -134,20 +138,29 @@ class CandidateParser:
         assessments = []
         raw = record.get("assessments") or record.get("test_scores") or []
 
-        if not isinstance(raw, list):
-            return assessments
+        if isinstance(raw, list) and raw:
+            for item in raw:
+                if not isinstance(item, dict):
+                    continue
+                try:
+                    skill = self._str(item.get("skill") or item.get("name") or item.get("subject"), "")
+                    score = self._float(item.get("score") or item.get("result"), None)
+                    if skill and score is not None:
+                        score = max(0.0, min(1.0, score if score <= 1.0 else score / 100.0))
+                        assessments.append(Assessment(skill=skill, score=score))
+                except Exception as e:
+                    logger.warning(f"Failed to parse assessment: {e}")
 
-        for item in raw:
-            if not isinstance(item, dict):
-                continue
-            try:
-                skill = self._str(item.get("skill") or item.get("name") or item.get("subject"), "")
-                score = self._float(item.get("score") or item.get("result"), None)
-                if skill and score is not None:
-                    score = max(0.0, min(1.0, score if score <= 1.0 else score / 100.0))
-                    assessments.append(Assessment(skill=skill, score=score))
-            except Exception as e:
-                logger.warning(f"Failed to parse assessment: {e}")
+        # Fallback to redrob_signals.skill_assessment_scores
+        signals = self._extract_behavioral_raw(record)
+        scores = signals.get("skill_assessment_scores")
+        if isinstance(scores, dict):
+            for skill_name, score_val in scores.items():
+                val = self._float(score_val, None)
+                if val is not None:
+                    val = max(0.0, min(1.0, val if val <= 1.0 else val / 100.0))
+                    assessments.append(Assessment(skill=skill_name, score=val))
+
         return assessments
 
     def _parse_languages(self, record: dict) -> List[str]:

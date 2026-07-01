@@ -24,12 +24,12 @@ class SubmissionWriter:
 
         with open(output_path, "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
-            writer.writerow(["rank", "candidate_id", "score", "reason"])
+            writer.writerow(["candidate_id", "rank", "score", "reason"])
             
             for row in submission_rows:
                 writer.writerow([
-                    row.rank,
                     row.candidate_id,
+                    row.rank,
                     f"{row.score:.4f}",
                     row.reason,
                 ])

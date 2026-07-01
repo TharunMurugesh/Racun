@@ -1,0 +1,27 @@
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Testing and caching
+.pytest_cache/
+.coverage
+htmlcov/
+prep.stats
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Large datasets and caches
+data/
+server/data/
+submission.csv
+
+# IDEs and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

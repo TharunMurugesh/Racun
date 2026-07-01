@@ -30,20 +30,29 @@ class RankerPipeline:
         self.submission_settings = settings.get("submission", {})
         self.prefilter_settings = settings.get("prefilter", {})
         
-        self.prefilter = PassThroughFilter()
+        if self.prefilter_settings.get("enabled", False):
+            from racun.filters.prefilter import KeywordPreFilter
+            self.prefilter = KeywordPreFilter()
+        else:
+            self.prefilter = PassThroughFilter()
 
-    def run(self, cache_dir: str) -> None:
+    def run(self, cache_dir: str, progress_callback=None) -> None:
         cache_path = Path(cache_dir)
         
         self.logger.info("Loading artifacts from cache...")
         with open(cache_path / "requirements.pkl", "rb") as f:
             requirements = pickle.load(f)
+
+        # Populate the requirement registry from cached requirements so that
+        # ClusterScorer and GateEvaluator can look up requirement metadata.
+        for req in requirements:
+            self.kb.requirement_registry.register(req)
+
+        from racun.pipeline.pickle_helper import load_pickle_stream
+        
+        candidates = load_pickle_stream(cache_path / "candidates.pkl")
             
-        with open(cache_path / "candidates.pkl", "rb") as f:
-            candidates = pickle.load(f)
-            
-        with open(cache_path / "evidence.pkl", "rb") as f:
-            evidence_dict = pickle.load(f)
+        evidence_dict = load_pickle_stream(cache_path / "evidence.pkl")
             
         with open(cache_path / "honeypot_ids.pkl", "rb") as f:
             honeypot_ids = pickle.load(f)
@@ -58,6 +67,7 @@ class RankerPipeline:
         mandatory_reqs = self.kb.requirement_registry.mandatory()
         clusters = self.kb.cluster_registry.all()
 
+        processed_count = 0
         for candidate in tqdm(filtered_candidates, desc="Ranking"):
             candidate_evidence = evidence_dict.get(candidate.candidate_id, [])
             
@@ -100,6 +110,10 @@ class RankerPipeline:
             result.reason = ExplanationGenerator.generate(candidate, result, self.kb)
             results.append(result)
 
+            processed_count += 1
+            if progress_callback:
+                progress_callback(processed_count)
+
         self.logger.info("Ranking top candidates...")
         top_k = self.submission_settings.get("top_k", 100)
         output_path = self.submission_settings.get("output_path", "submission.csv")
@@ -108,5 +122,25 @@ class RankerPipeline:
         
         self.logger.info(f"Writing results to {output_path}...")
         SubmissionWriter.write(top_results, output_path)
+
+        # Save detailed results for the API to read without re-computing
+        results_path = cache_path / "results.pkl"
+        results_data = []
+        cands_map = {c.candidate_id: c for c in candidates}
+        for r in top_results:
+            cand = cands_map.get(r.candidate_id)
+            results_data.append({
+                "rank": r.rank,
+                "candidate_id": r.candidate_id,
+                "name": cand.name if cand else "",
+                "score": round(r.final_score, 4),
+                "core_score": round(r.core_score, 4),
+                "gate_modifier": round(r.gate_modifier, 4),
+                "integrity_modifier": round(r.integrity_modifier, 4),
+                "behavior_modifier": round(r.behavior_modifier, 4),
+                "reason": r.reason,
+            })
+        with open(results_path, "wb") as f:
+            pickle.dump(results_data, f)
         
         self.logger.info("Ranking pipeline complete.")
