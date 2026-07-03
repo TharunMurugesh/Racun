@@ -19,10 +19,10 @@ hierarchy_weights:
   SKILL: 0.25
   SUMMARY: 0.5
 honeypot:
-  expert_assessment_floor: 0.35
-  flag_threshold: 2
+  expert_assessment_floor: 0.55
+  flag_threshold: 3
   min_unsupported_experts: 5
-  skill_overflow_ratio: 1.7
+  skill_overflow_ratio: 2.2
 integrity:
   floor: 0.6
   penalty_per_flag: 0.1

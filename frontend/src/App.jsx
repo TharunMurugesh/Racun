@@ -7,7 +7,6 @@ import Dashboard      from './pages/Dashboard.jsx';
 import CandidateRanker from './pages/CandidateRanker.jsx';
 import HoneypotCenter from './pages/HoneypotCenter.jsx';
 import OntologySettings from './pages/OntologySettings.jsx';
-import AuthProfile    from './pages/AuthProfile.jsx';
 
 
 /* ─────────────────────────────── Icon Components ─────────────────────────────── */
@@ -36,7 +35,6 @@ const NAV_ITEMS = [
   { id: 'ranker',     label: 'Candidate Ranker',  icon: ICONS.users,  section: 'main' },
   { id: 'honeypots',  label: 'Honeypot Center',   icon: ICONS.shield, section: 'main' },
   { id: 'ontology',   label: 'Ontology & Settings', icon: ICONS.cog, section: 'settings' },
-  { id: 'profile',    label: 'Profile & Auth',    icon: ICONS.user,   section: 'settings' },
 ];
 
 /* ─────────────────────────────── Toast System ────────────────────────────── */
@@ -86,7 +84,7 @@ function ToastContainer({ toasts, onDismiss }) {
 }
 
 /* ──────────────────────────── Sidebar Component ────────────────────────── */
-function Sidebar({ currentPage, onNavigate, user, sidebarOpen, onToggle }) {
+function Sidebar({ currentPage, onNavigate, sidebarOpen, onToggle }) {
   const mainItems    = NAV_ITEMS.filter(i => i.section === 'main');
   const settingItems = NAV_ITEMS.filter(i => i.section === 'settings');
 
@@ -151,41 +149,6 @@ function Sidebar({ currentPage, onNavigate, user, sidebarOpen, onToggle }) {
             ))}
           </div>
         </nav>
-
-        {/* User Footer */}
-        <div style={{
-          padding: '16px',
-          borderTop: '1px solid var(--border-light)',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '12px',
-        }}>
-          <div style={{
-            width: '34px', height: '34px',
-            borderRadius: '50%',
-            background: 'linear-gradient(135deg, var(--accent-primary), var(--accent-teal))',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: '0.8rem',
-            fontWeight: '700',
-            color: 'white',
-            flexShrink: 0,
-          }}>
-            {(user?.name || 'G').charAt(0)}
-          </div>
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <div style={{ fontSize: '0.85rem', fontWeight: '600', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-              {user?.name || 'Guest'}
-            </div>
-            <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>{user?.role || 'Viewer'}</div>
-          </div>
-          <button
-            onClick={() => onNavigate('profile')}
-            style={{ background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', padding: '4px' }}
-            title="Profile settings"
-          >
-            <Icon d={ICONS.cog} size={16} />
-          </button>
-        </div>
       </aside>
     </>
   );
@@ -313,11 +276,9 @@ function Topbar({ currentPage, onToggle }) {
 
 /* ─────────────────────────────── Main App ────────────────────────────── */
 export default function App() {
-  const [page, setPage] = useState('landing');
+  const [page, setPage] = useState('ranker');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [toasts, setToasts] = useState([]);
-
-  const [user, setUser] = useState({ name: 'Guest Recruiter', role: 'Recruiter' });
 
   // Toast helpers
   const addToast = useCallback((message, type = 'info', duration = 4000) => {
@@ -360,16 +321,6 @@ export default function App() {
         return <HoneypotCenter addToast={addToast} />;
       case 'ontology':
         return <OntologySettings addToast={addToast} />;
-      case 'profile':
-        return (
-          <AuthProfile
-            user={user}
-            onLogin={(u) => { setUser(u); addToast(`Welcome, ${u.name}!`, 'success'); }}
-            onLogout={() => { setUser({ name: 'Guest Recruiter', role: 'Recruiter' }); addToast('Logged out.', 'info'); }}
-            onUpdateRole={(role) => { setUser(u => ({ ...u, role })); addToast(`Role changed to ${role}.`, 'success'); }}
-          />
-        );
-
       default:
         return <Dashboard onNavigate={navigate} addToast={addToast} />;
     }
@@ -390,7 +341,6 @@ export default function App() {
           <Sidebar
             currentPage={page}
             onNavigate={navigate}
-            user={user}
             sidebarOpen={sidebarOpen}
             onToggle={() => setSidebarOpen(o => !o)}
           />

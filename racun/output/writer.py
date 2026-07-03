@@ -24,8 +24,6 @@ class SubmissionWriter:
 
         with open(output_path, "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
-            writer.writerow(["candidate_id", "rank", "score", "reason"])
-            
             for row in submission_rows:
                 writer.writerow([
                     row.candidate_id,

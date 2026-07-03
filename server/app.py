@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Dict, Any, List, Optional
 from fastapi import FastAPI, HTTPException, Body, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse, HTMLResponse
 
 # Add parent directory to path so racun module can be imported
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
@@ -66,7 +67,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 CONFIG_DIR = str(PROJECT_ROOT / "config")
 CACHE_DIR = str(PROJECT_ROOT / "data" / "cache")
 JD_PATH = str(PROJECT_ROOT / "data" / "raw" / "job_description.md")
-CANDIDATES_PATH = str(PROJECT_ROOT / "data" / "raw" / "candidates.jsonl.gz")
+CANDIDATES_PATH = str(PROJECT_ROOT / "data" / "raw" / "candidates.jsonl")
 
 # Global state for tracking preprocessing progress
 preprocessing_status = {
@@ -81,6 +82,12 @@ ranking_status = {
     "is_running": False,
     "processed_count": 0,
     "total_count": 0,
+    "error": None
+}
+
+pipeline_status = {
+    "is_running": False,
+    "stage": "idle",
     "error": None
 }
 
@@ -226,24 +233,83 @@ def run_ranking_task():
         ranking_status["is_running"] = False
         ranking_status["error"] = str(e)
 
+def run_full_pipeline_task():
+    global pipeline_status
+    try:
+        pipeline_status["is_running"] = True
+        pipeline_status["stage"] = "preprocessing"
+        pipeline_status["error"] = None
+
+        run_preprocess_task()
+        if preprocessing_status["error"]:
+            raise RuntimeError(preprocessing_status["error"])
+
+        pipeline_status["stage"] = "ranking"
+        run_ranking_task()
+        if ranking_status["error"]:
+            raise RuntimeError(ranking_status["error"])
+
+        pipeline_status["stage"] = "complete"
+        pipeline_status["is_running"] = False
+    except Exception as e:
+        traceback.print_exc()
+        pipeline_status["error"] = str(e)
+        pipeline_status["stage"] = "failed"
+        pipeline_status["is_running"] = False
+
 def ensure_mock_data_exists():
     jd_file = Path(JD_PATH)
-    gz_file = Path(CANDIDATES_PATH)
-    cache_req = Path(CACHE_DIR) / "requirements.pkl"
-    cache_cand = Path(CACHE_DIR) / "candidates.pkl"
+    candidates_file = Path(CANDIDATES_PATH)
 
-    if not jd_file.exists() or not gz_file.exists():
-        print("Mock data files missing. Generating automatically...")
+    if not jd_file.exists():
+        jd_file.parent.mkdir(parents=True, exist_ok=True)
+        jd_file.write_text(
+            "# Lead AI/ML Engineer - Job Description\n\n"
+            "- Strong Python programming skills.\n"
+            "- Experience building machine learning models with PyTorch or TensorFlow.\n"
+            "- Experience with RAG, LLM fine-tuning, and vector databases.\n",
+            encoding="utf-8",
+        )
+
+    if not candidates_file.exists():
+        print("Candidate dataset missing. Generating sample candidates.jsonl...")
         generate_mock_data()
 
-    # Only run preprocessing if cache doesn't exist yet
-    if not cache_req.exists() or not cache_cand.exists():
-        print("Running initial preprocessing pipeline...")
-        prep = Preprocessor(CONFIG_DIR)
-        prep.run(JD_PATH, CANDIDATES_PATH, CACHE_DIR)
-        print("Initial preprocessing complete.")
-
 ensure_mock_data_exists()
+
+@app.get("/", response_class=HTMLResponse)
+def single_site_app():
+    return '''
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RACUN Candidate Pipeline</title>
+<style>
+:root{color-scheme:dark;font-family:Segoe UI,Arial,sans-serif;background:#07090e;color:#f8fafc}*{box-sizing:border-box}body{margin:0;background:#07090e}header{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:20px 28px;background:#0a0d14;border-bottom:1px solid rgba(255,255,255,.08)}main{padding:24px 28px;display:grid;gap:18px}h1,h2,h3{margin:0}.muted{color:#94a3b8}.controls{display:flex;flex-wrap:wrap;gap:10px}button,a.button{border-radius:8px;padding:11px 16px;color:#f8fafc;font-weight:700;cursor:pointer;text-decoration:none;border:0}button:disabled{opacity:.5;cursor:not-allowed}.primary{background:linear-gradient(135deg,#0d9488,#7c3aed)}.secondary{background:transparent;border:1px solid rgba(255,255,255,.16)}.danger{background:rgba(220,38,38,.16);border:1px solid rgba(220,38,38,.55);color:#fecaca}.panel{background:#101524;border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:18px}.row{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.progress{height:10px;border-radius:999px;overflow:hidden;background:#161c2f;border:1px solid rgba(255,255,255,.08)}#bar{height:100%;width:0;background:linear-gradient(90deg,#0d9488,#7c3aed);transition:width .25s}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:14px}.candidate{width:100%;display:grid;grid-template-columns:56px minmax(0,1fr);gap:14px;text-align:left;background:#101524;border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:15px}.candidate:hover{background:#161c2f}.rank{width:56px;height:56px;display:grid;place-items:center;background:rgba(13,148,136,.14);border:1px solid rgba(13,148,136,.35);border-radius:8px;color:#99f6e4;font-weight:900}.name{font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.id{margin-top:4px;color:#64748b;font-family:Consolas,monospace;font-size:12px}.score{padding:5px 9px;border-radius:999px;background:rgba(5,150,105,.16);border:1px solid rgba(5,150,105,.36);color:#a7f3d0;font-family:Consolas,monospace;font-weight:800}.reason{margin:10px 0 0;color:#94a3b8;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.error{display:none;color:#fecaca;background:rgba(220,38,38,.16);border:1px solid rgba(220,38,38,.5);border-radius:8px;padding:12px}dialog{width:min(760px,calc(100vw - 28px));max-height:calc(100vh - 28px);border:1px solid rgba(255,255,255,.14);border-radius:12px;background:#101524;color:#f8fafc;padding:0}dialog::backdrop{background:rgba(0,0,0,.68)}.modal-head{display:flex;justify-content:space-between;padding:18px;border-bottom:1px solid rgba(255,255,255,.08)}.modal-body{padding:18px;display:grid;gap:16px}.kv{display:grid;grid-template-columns:120px 1fr;gap:8px;color:#94a3b8}@media(max-width:640px){header{align-items:flex-start;flex-direction:column}main{padding:18px 14px}.candidate{grid-template-columns:48px 1fr}.rank{width:48px;height:48px}}
+</style>
+</head>
+<body>
+<header><div><h1>RACUN Candidate Pipeline</h1><div class="muted">Start, erase cache, inspect candidates, and export CSV from one website.</div></div><div class="controls"><a id="csvBtn" class="button secondary" href="/api/rank/csv" target="_blank" style="display:none">Open CSV</a><button id="eraseBtn" class="danger">Erase Cache</button><button id="startBtn" class="primary">Start</button></div></header>
+<main><div id="error" class="error"></div><section class="panel"><div class="row"><strong id="stage">Ready</strong><span id="progressText" class="muted">0%</span></div><div class="progress" style="margin:10px 0"><div id="bar"></div></div><div id="counts" class="muted">Click Start to run preprocessing and ranking.</div></section><section><div class="row" style="margin-bottom:12px"><h2>Top 100 Candidates</h2><span id="csvReady" class="muted"></span></div><div id="results" class="grid"></div></section></main>
+<dialog id="detailDialog"><div class="modal-head"><div><h2 id="detailName"></h2><div id="detailId" class="id"></div></div><button class="secondary" id="closeBtn">Close</button></div><div id="detailBody" class="modal-body"></div></dialog>
+<script>
+var startBtn=document.getElementById('startBtn'),eraseBtn=document.getElementById('eraseBtn'),csvBtn=document.getElementById('csvBtn'),csvReady=document.getElementById('csvReady'),stageEl=document.getElementById('stage'),progressText=document.getElementById('progressText'),bar=document.getElementById('bar'),counts=document.getElementById('counts'),results=document.getElementById('results'),errorBox=document.getElementById('error'),detailDialog=document.getElementById('detailDialog'),detailBody=document.getElementById('detailBody'),timer=null;
+document.getElementById('closeBtn').onclick=function(){detailDialog.close()};
+function esc(v){return String(v==null?'':v).replace(/[&<>'"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]})}
+function showError(m){errorBox.textContent=m||'';errorBox.style.display=m?'block':'none'}
+function label(s){return {idle:'Ready',preprocessing:'Preprocessing candidates',ranking:'Ranking candidates',complete:'Complete',failed:'Failed'}[s]||'Working'}
+async function req(url,opt){var r=await fetch(url,opt);if(!r.ok){var d=await r.json().catch(function(){return {}});throw new Error(d.detail||r.statusText)}return r.json()}
+async function refreshStatus(){var s=await req('/api/status');var running=!!(s.pipeline&&s.pipeline.is_running||s.preprocessing&&s.preprocessing.is_running||s.ranking&&s.ranking.is_running);startBtn.disabled=running;eraseBtn.disabled=running;var active=s.pipeline&&s.pipeline.stage==='preprocessing'?s.preprocessing:s.ranking;var total=active&&active.total_count||0,processed=active&&active.processed_count||0,pct=total?Math.min(100,Math.round(processed/total*100)):running?8:0;stageEl.textContent=label(s.pipeline&&s.pipeline.stage||'idle');progressText.textContent=pct+'%';bar.style.width=pct+'%';counts.textContent='Requirements: '+(s.requirements_count||0)+' | Candidates: '+(s.candidates_count||0).toLocaleString()+' | Honeypots: '+(s.honeypots_count||0);if(!running&&timer){clearInterval(timer);timer=null;await loadResults()}if(s.pipeline&&s.pipeline.error||s.preprocessing&&s.preprocessing.error||s.ranking&&s.ranking.error)showError(s.pipeline&&s.pipeline.error||s.preprocessing&&s.preprocessing.error||s.ranking&&s.ranking.error);return s}
+async function loadResults(){try{var data=await req('/api/rank/results');var top=Array.isArray(data)?data.slice(0,100):[];csvBtn.style.display=top.length?'inline-flex':'none';csvReady.textContent=top.length?'CSV ready':'';results.innerHTML='';if(!top.length){results.innerHTML='<div class="panel muted">No ranked candidates yet. Click Start to run the full pipeline.</div>';return}top.forEach(function(c){var b=document.createElement('button');b.className='candidate';b.onclick=function(){openDetail(c.candidate_id)};b.innerHTML='<div class="rank">#'+esc(c.rank)+'</div><div><div class="row"><div><div class="name">'+esc(c.name||c.candidate_id)+'</div><div class="id">'+esc(c.candidate_id)+'</div></div><div class="score">'+Number(c.score).toFixed(4)+'</div></div><p class="reason">'+esc(c.reason||'')+'</p></div>';results.appendChild(b)})}catch(e){csvBtn.style.display='none';csvReady.textContent='';results.innerHTML='<div class="panel muted">No ranked candidates yet. Click Start to run the full pipeline.</div>'}}
+async function openDetail(id){document.getElementById('detailName').textContent='Loading...';document.getElementById('detailId').textContent=id;detailBody.innerHTML='';detailDialog.showModal();var both=await Promise.all([req('/api/candidate/'+id),req('/api/candidate/'+id+'/reasoning')]);var p=both[0],r=both[1];document.getElementById('detailName').textContent=p.name||id;detailBody.innerHTML='<section><h3>Contact Details</h3><div class="kv"><b>Email</b><span>'+esc(p.contact&&p.contact.email||'Not provided')+'</span><b>Phone</b><span>'+esc(p.contact&&p.contact.phone||'Not provided')+'</span><b>Profile</b><span>'+esc(p.contact&&p.contact.profile||'Not provided')+'</span></div></section><section><h3>Why ranked higher</h3><p class="muted">'+esc(r.explanation||'')+'</p></section><section><h3>Score</h3><div class="kv"><b>Final</b><span>'+Number(r.final_score).toFixed(4)+'</span><b>Core</b><span>'+Number(r.core_score).toFixed(4)+'</span><b>Gate</b><span>'+Number(r.gate_modifier).toFixed(2)+'</span><b>Integrity</b><span>'+Number(r.integrity_modifier).toFixed(2)+'</span></div></section><section><h3>Summary</h3><p class="muted">'+esc(p.summary||'No summary provided.')+'</p></section>'}
+startBtn.onclick=async function(){showError('');results.innerHTML='<div class="panel muted">Pipeline running...</div>';try{await req('/api/pipeline/start',{method:'POST'});await refreshStatus();if(!timer)timer=setInterval(refreshStatus,1500)}catch(e){showError(e.message)}};
+eraseBtn.onclick=async function(){showError('');try{await req('/api/cache/clear',{method:'POST'});csvBtn.style.display='none';csvReady.textContent='';results.innerHTML='<div class="panel muted">Cache erased. Click Start to preprocess and rank again.</div>';await refreshStatus()}catch(e){showError(e.message)}};
+refreshStatus().then(loadResults).catch(function(e){showError(e.message)});
+</script>
+</body>
+</html>
+    '''
 
 
 @app.get("/api/status")
@@ -261,7 +327,8 @@ def get_status():
         "candidates_count": 0,
         "honeypots_count": 0,
         "preprocessing": preprocessing_status,
-        "ranking": ranking_status
+        "ranking": ranking_status,
+        "pipeline": pipeline_status
     }
     
     if status["cache_exists"]:
@@ -377,6 +444,14 @@ def start_ranking(background_tasks: BackgroundTasks):
     background_tasks.add_task(run_ranking_task)
     return {"status": "processing", "message": "Ranking started in background."}
 
+@app.post("/api/pipeline/start")
+def start_full_pipeline(background_tasks: BackgroundTasks):
+    if pipeline_status["is_running"] or preprocessing_status["is_running"] or ranking_status["is_running"]:
+        return {"status": "processing", "message": "Pipeline is already running."}
+
+    background_tasks.add_task(run_full_pipeline_task)
+    return {"status": "processing", "message": "Pipeline started."}
+
 @app.get("/api/rank/results")
 def get_ranking_results():
     """Return the pre-computed ranking results from results.pkl."""
@@ -391,6 +466,43 @@ def get_ranking_results():
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.post("/api/cache/clear")
+def clear_pipeline_cache():
+    if pipeline_status["is_running"] or preprocessing_status["is_running"] or ranking_status["is_running"]:
+        raise HTTPException(status_code=409, detail="Pipeline is running. Wait for it to finish before clearing cache.")
+
+    cache_path = Path(CACHE_DIR)
+    removed = []
+    for file_path in cache_path.glob("*.pkl"):
+        file_path.unlink(missing_ok=True)
+        removed.append(file_path.name)
+
+    settings = KnowledgeLoader._load_yaml(Path(CONFIG_DIR) / "settings.yaml")
+    output_path = Path(settings.get("submission", {}).get("output_path", "submission.csv"))
+    if not output_path.is_absolute():
+        output_path = PROJECT_ROOT / output_path
+    if output_path.exists():
+        output_path.unlink()
+        removed.append(output_path.name)
+
+    preprocessing_status.update({"is_running": False, "processed_count": 0, "total_count": 0, "error": None})
+    ranking_status.update({"is_running": False, "processed_count": 0, "total_count": 0, "error": None})
+    pipeline_status.update({"is_running": False, "stage": "idle", "error": None})
+    _pipeline_stats_cache.update({"requirements_count": 0, "candidates_count": 0, "honeypots_count": 0, "last_mtimes": {}})
+    _honeypot_details_cache.update({"mtime": None, "items": []})
+
+    return {"status": "success", "removed": removed}
+
+@app.get("/api/rank/csv")
+def get_submission_csv():
+    settings = KnowledgeLoader._load_yaml(Path(CONFIG_DIR) / "settings.yaml")
+    output_path = Path(settings.get("submission", {}).get("output_path", "submission.csv"))
+    if not output_path.is_absolute():
+        output_path = PROJECT_ROOT / output_path
+    if not output_path.exists():
+        raise HTTPException(status_code=404, detail="No CSV found. Run the pipeline first.")
+    return FileResponse(str(output_path), media_type="text/csv", filename=output_path.name)
+
 @app.get("/api/candidate/{cid}")
 def get_candidate_details(cid: str):
     cache_cand = Path(CACHE_DIR) / "candidates.pkl"
@@ -403,6 +515,11 @@ def get_candidate_details(cid: str):
         return {
             "candidate_id": c.candidate_id,
             "name": c.name,
+            "contact": {
+                "email": f"{(c.name or c.candidate_id).lower().replace(' ', '.').replace('_', '.')}@candidate.local",
+                "phone": "Not provided",
+                "profile": f"https://profiles.local/{c.candidate_id}"
+            },
             "summary": c.summary,
             "years_experience": c.years_experience,
             "career_history": [

@@ -53,6 +53,32 @@ export const api = {
     return res.json();
   },
 
+  async clearCache() {
+    const res = await fetch(`${API_BASE_URL}/cache/clear`, {
+      method: 'POST',
+    });
+    if (!res.ok) {
+      const errData = await res.json().catch(() => ({}));
+      throw new Error(errData.detail || 'Failed to erase cache');
+    }
+    return res.json();
+  },
+
+  async startPipeline() {
+    const res = await fetch(`${API_BASE_URL}/pipeline/start`, {
+      method: 'POST',
+    });
+    if (!res.ok) {
+      const errData = await res.json().catch(() => ({}));
+      throw new Error(errData.detail || 'Failed to start pipeline');
+    }
+    return res.json();
+  },
+
+  getCsvUrl() {
+    return `${API_BASE_URL}/rank/csv`;
+  },
+
   async runRanking() {
     const res = await fetch(`${API_BASE_URL}/rank`, {
       method: 'POST',

@@ -289,12 +289,12 @@ We are looking for a Lead AI/ML Engineer to design and implement requirement-awa
         "behavioral_signals": {}
     })
 
-    # Add 43 more mock candidates to reach 50 records in total, varying in quality
+    # Add more mock candidates to reach 100 records in total, varying in quality
     names = ["Alex", "Blake", "Charlie", "Dani", "Eli", "Frankie", "Gaby", "Hal", "Jordan", "Kim", "Lee", "Morgan", "Taylor", "Sam", "Robin", "Pat", "Terry", "Kelly", "Chris", "Jamie"]
     roles = ["Senior ML Engineer", "Data Scientist", "Software Engineer", "Cloud Engineer", "Product Manager", "Python Backend Developer"]
     companies = ["Google", "Meta", "Amazon", "OpenAI", "Anthropic", "Netflix", "HuggingFace", "Cohere", "Pinecone", "Qdrant"]
     
-    for idx in range(8, 51):
+    for idx in range(8, 101):
         name = names[idx % len(names)] + f"_{idx}"
         role = roles[idx % len(roles)]
         company = companies[idx % len(companies)]
@@ -351,6 +351,13 @@ We are looking for a Lead AI/ML Engineer to design and implement requirement-awa
     with open(raw_dir / "sample_candidates.json", "w", encoding="utf-8") as f:
         json.dump(candidates, f, indent=2)
     print("Generated sample_candidates.json")
+
+    # Write to candidates.jsonl
+    jsonl_path = raw_dir / "candidates.jsonl"
+    with open(jsonl_path, "w", encoding="utf-8") as f:
+        for c in candidates:
+            f.write(json.dumps(c) + "\n")
+    print("Generated candidates.jsonl")
 
     # Write to candidates.jsonl.gz
     gz_path = raw_dir / "candidates.jsonl.gz"

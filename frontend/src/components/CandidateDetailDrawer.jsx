@@ -258,6 +258,15 @@ export default function CandidateDetailDrawer({ candidateId, onClose }) {
             {/* TAB: CANDIDATE PROFILE */}
             {activeTab === 'profile' && profile && (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', fontSize: '0.9rem' }}>
+                <div>
+                  <h4 style={{ fontSize: '1.05rem', marginBottom: '10px', borderBottom: '1px solid var(--border-light)', paddingBottom: '6px' }}>Contact Details</h4>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '8px', color: 'var(--text-secondary)' }}>
+                    <div><strong style={{ color: 'var(--text-primary)' }}>Email:</strong> {profile.contact?.email || 'Not provided'}</div>
+                    <div><strong style={{ color: 'var(--text-primary)' }}>Phone:</strong> {profile.contact?.phone || 'Not provided'}</div>
+                    <div><strong style={{ color: 'var(--text-primary)' }}>Profile:</strong> {profile.contact?.profile || 'Not provided'}</div>
+                  </div>
+                </div>
+
                 {/* Summary */}
                 <div>
                   <h4 style={{ fontSize: '1.05rem', marginBottom: '8px', borderBottom: '1px solid var(--border-light)', paddingBottom: '6px' }}>Summary Bio</h4>

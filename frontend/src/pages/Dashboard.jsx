@@ -358,16 +358,6 @@ export default function Dashboard({ onNavigate, addToast }) {
                 <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Calibrate weights and thresholds</div>
               </div>
             </div>
-
-            <div className="glass-panel" onClick={() => onNavigate('profile')} style={{ padding: '20px', cursor: 'pointer', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-              <div style={{ color: 'var(--text-secondary)' }}>
-                <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 110-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.767.253.553.876.83 1.43.53l1.105-.6a1.5 1.5 0 011.905.35l1.492 1.74a1.5 1.5 0 002.24.04l2.23-2.23a1.5 1.5 0 00.04-2.24l-1.74-1.492a1.5 1.5 0 01-.35-1.905l.6-1.105c.3-.554.023-1.177-.53-1.43a15.58 15.58 0 00-2.766-.985m0 9.18a15.59 15.59 0 01-2.767-.985M15.58 8.44a15.59 15.59 0 00-2.766-.985m0 0A15.58 15.58 0 0115.58 6M12 12h.008v.008H12V12z"/></svg>
-              </div>
-              <div>
-                <div style={{ fontWeight: '700', fontSize: '0.95rem', marginBottom: '4px' }}>Pipeline Config</div>
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Adjust server parameters</div>
-              </div>
-            </div>
           </div>
         </div>
 

@@ -115,8 +115,9 @@ class RankerPipeline:
                 progress_callback(processed_count)
 
         self.logger.info("Ranking top candidates...")
-        top_k = self.submission_settings.get("top_k", 100)
-        output_path = self.submission_settings.get("output_path", "submission.csv")
+        top_k = 100
+        output_path = Path(self.submission_settings.get("output_path", "submission.csv"))
+        output_path = output_path if output_path.is_absolute() else cache_path.parents[1] / output_path
         
         top_results = Ranker.rank(results, top_k=top_k)
         

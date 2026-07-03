@@ -1,0 +1,3869 @@
+[
+  {
+    "id": "cand_001",
+    "name": "Sarah Connor",
+    "summary": "Senior ML Engineer with 8+ years experience. Expert in LLMs, RAG pipelines, fine-tuning, and scalable vector search databases.",
+    "years_experience": 8.0,
+    "work_experience": [
+      {
+        "company": "Cyberdyne Systems",
+        "role": "Lead AI Engineer",
+        "industry": "Enterprise SaaS",
+        "company_size": "Large",
+        "duration_months": 36,
+        "start_date": "2023-07",
+        "end_date": "present",
+        "description": "Led deployment of RAG pipeline processing 10M queries/day using Milvus vector database and LLM fine-tuning via QLoRA. Built microservices in Python.",
+        "is_current": true
+      },
+      {
+        "company": "Skynet Tech",
+        "role": "Senior ML Engineer",
+        "industry": "Search",
+        "company_size": "Medium",
+        "duration_months": 60,
+        "start_date": "2018-07",
+        "end_date": "2023-07",
+        "description": "Built and trained deep neural networks using PyTorch for NLP tasks. Implemented model optimization and model deployment with Docker and Kubernetes.",
+        "is_current": false
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 8.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "PyTorch",
+        "years": 6.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "Milvus",
+        "years": 3.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "RAG",
+        "years": 3.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "Docker",
+        "years": 5.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "Kubernetes",
+        "years": 4.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [
+      {
+        "degree": "MS",
+        "field": "Computer Science",
+        "institution": "Stanford University",
+        "year": 2018
+      }
+    ],
+    "certifications": [
+      "AWS Certified Machine Learning",
+      "TensorFlow Developer"
+    ],
+    "assessments": [
+      {
+        "skill": "Python",
+        "score": 0.95
+      },
+      {
+        "skill": "PyTorch",
+        "score": 0.92
+      }
+    ],
+    "languages": [
+      "English"
+    ],
+    "behavioral_signals": {
+      "platform_contributions": 120,
+      "profile_completeness": 1.0
+    }
+  },
+  {
+    "id": "cand_002",
+    "name": "John Connor",
+    "summary": "ML Engineer specialized in PyTorch modeling. Expanding skills in LLMs and MLOps.",
+    "years_experience": 4.0,
+    "work_experience": [
+      {
+        "company": "Resistance Corp",
+        "role": "Machine Learning Engineer",
+        "industry": "Defense",
+        "company_size": "Medium",
+        "duration_months": 48,
+        "start_date": "2022-07",
+        "end_date": "present",
+        "description": "Trained and evaluated deep learning architectures in PyTorch. Worked on model optimization and basic Python backend systems.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 4.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 3.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Docker",
+        "years": 2.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [
+      {
+        "degree": "BS",
+        "field": "Data Science",
+        "institution": "MIT",
+        "year": 2022
+      }
+    ],
+    "certifications": [],
+    "assessments": [
+      {
+        "skill": "Python",
+        "score": 0.65
+      }
+    ],
+    "languages": [
+      "English"
+    ],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_003",
+    "name": "Marcus Wright",
+    "summary": "Software Developer interested in transitioning to AI/ML.",
+    "years_experience": 3.0,
+    "work_experience": [
+      {
+        "company": "Project Angel",
+        "role": "Full Stack Developer",
+        "industry": "Healthcare",
+        "company_size": "Small",
+        "duration_months": 36,
+        "start_date": "2023-07",
+        "end_date": "present",
+        "description": "Developed web applications in JavaScript and Python. Maintained SQL databases.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 1.5,
+        "proficiency": "beginner"
+      },
+      {
+        "name": "PyTorch",
+        "years": 0.5,
+        "proficiency": "beginner"
+      },
+      {
+        "name": "Milvus",
+        "years": 0.2,
+        "proficiency": "beginner"
+      },
+      {
+        "name": "RAG",
+        "years": 0.2,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_004_honeypot_timeline",
+    "name": "Honeypot Chronos",
+    "summary": "Senior ML Engineer working two full-time roles simultaneously.",
+    "years_experience": 5.0,
+    "work_experience": [
+      {
+        "company": "Parallel Corp",
+        "role": "Lead Researcher",
+        "industry": "AI Research",
+        "company_size": "Medium",
+        "duration_months": 24,
+        "start_date": "2024-01",
+        "end_date": "2025-12",
+        "description": "Deep neural network training and LoRA fine-tuning.",
+        "is_current": false
+      },
+      {
+        "company": "Overlap Systems",
+        "role": "Senior Engineer",
+        "industry": "Finance",
+        "company_size": "Medium",
+        "duration_months": 24,
+        "start_date": "2024-06",
+        "end_date": "present",
+        "description": "Milvus vector database deployment and RAG pipeline engineering.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 5.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_005_honeypot_overflow",
+    "name": "Honeypot Overflow",
+    "summary": "Junior engineer claiming decades of experience across skills.",
+    "years_experience": 3.0,
+    "work_experience": [
+      {
+        "company": "Brief Inc",
+        "role": "Developer",
+        "industry": "SaaS",
+        "company_size": "Small",
+        "duration_months": 36,
+        "start_date": "2023-07",
+        "end_date": "present",
+        "description": "General programming tasks.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 15.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "PyTorch",
+        "years": 15.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "Milvus",
+        "years": 15.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "Kubernetes",
+        "years": 15.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_006_honeypot_contradict",
+    "name": "Honeypot Contradict",
+    "summary": "Expert PyTorch engineer.",
+    "years_experience": 5.0,
+    "work_experience": [
+      {
+        "company": "AI Labs",
+        "role": "PyTorch Developer",
+        "industry": "SaaS",
+        "company_size": "Small",
+        "duration_months": 60,
+        "start_date": "2021-07",
+        "end_date": "present",
+        "description": "Used PyTorch extensively to train neural network architectures.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "PyTorch",
+        "years": 5.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [
+      {
+        "skill": "PyTorch",
+        "score": 0.15
+      }
+    ],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_007_unsuited",
+    "name": "Kate Brewster",
+    "summary": "Experienced Sales Manager with track record of driving revenue growth in enterprise software sales.",
+    "years_experience": 6.0,
+    "work_experience": [
+      {
+        "company": "Orion Sales",
+        "role": "Sales Manager",
+        "industry": "Enterprise Software",
+        "company_size": "Large",
+        "duration_months": 72,
+        "start_date": "2020-07",
+        "end_date": "present",
+        "description": "Led sales teams, closed deals, managed enterprise accounts.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Sales",
+        "years": 6.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "Account Management",
+        "years": 5.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [
+      {
+        "degree": "BA",
+        "field": "Business",
+        "institution": "UCLA",
+        "year": 2020
+      }
+    ],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_008",
+    "name": "Jordan_8",
+    "summary": "Professional working as Software Engineer.",
+    "years_experience": 2.0,
+    "work_experience": [
+      {
+        "company": "Pinecone",
+        "role": "Software Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 24,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Software Engineer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 2.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 1.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_009",
+    "name": "Kim_9",
+    "summary": "Professional working as Cloud Engineer.",
+    "years_experience": 3.0,
+    "work_experience": [
+      {
+        "company": "Qdrant",
+        "role": "Cloud Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 36,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Cloud Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 3.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 3.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_010",
+    "name": "Lee_10",
+    "summary": "Professional working as Product Manager.",
+    "years_experience": 4.0,
+    "work_experience": [
+      {
+        "company": "Google",
+        "role": "Product Manager",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 48,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Product Manager tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 4.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 3.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_011",
+    "name": "Morgan_11",
+    "summary": "Professional working as Python Backend Developer.",
+    "years_experience": 5.0,
+    "work_experience": [
+      {
+        "company": "Meta",
+        "role": "Python Backend Developer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 60,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Python Backend Developer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 5.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 4.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_012",
+    "name": "Taylor_12",
+    "summary": "Professional working as Senior ML Engineer.",
+    "years_experience": 6.0,
+    "work_experience": [
+      {
+        "company": "Amazon",
+        "role": "Senior ML Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 72,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Senior ML Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 6.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 6.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_013",
+    "name": "Sam_13",
+    "summary": "Professional working as Data Scientist.",
+    "years_experience": 7.0,
+    "work_experience": [
+      {
+        "company": "OpenAI",
+        "role": "Data Scientist",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 84,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Data Scientist tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 7.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 6.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_014",
+    "name": "Robin_14",
+    "summary": "Professional working as Software Engineer.",
+    "years_experience": 8.0,
+    "work_experience": [
+      {
+        "company": "Anthropic",
+        "role": "Software Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 96,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Software Engineer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 8.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 7.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_015",
+    "name": "Pat_15",
+    "summary": "Professional working as Cloud Engineer.",
+    "years_experience": 9.0,
+    "work_experience": [
+      {
+        "company": "Netflix",
+        "role": "Cloud Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 108,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Cloud Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 9.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 9.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_016",
+    "name": "Terry_16",
+    "summary": "Professional working as Product Manager.",
+    "years_experience": 2.0,
+    "work_experience": [
+      {
+        "company": "HuggingFace",
+        "role": "Product Manager",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 24,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Product Manager tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 2.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 1.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_017",
+    "name": "Kelly_17",
+    "summary": "Professional working as Python Backend Developer.",
+    "years_experience": 3.0,
+    "work_experience": [
+      {
+        "company": "Cohere",
+        "role": "Python Backend Developer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 36,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Python Backend Developer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 3.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 2.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_018",
+    "name": "Chris_18",
+    "summary": "Professional working as Senior ML Engineer.",
+    "years_experience": 4.0,
+    "work_experience": [
+      {
+        "company": "Pinecone",
+        "role": "Senior ML Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 48,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Senior ML Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 4.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 4.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_019",
+    "name": "Jamie_19",
+    "summary": "Professional working as Data Scientist.",
+    "years_experience": 5.0,
+    "work_experience": [
+      {
+        "company": "Qdrant",
+        "role": "Data Scientist",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 60,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Data Scientist tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 5.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 4.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_020",
+    "name": "Alex_20",
+    "summary": "Professional working as Software Engineer.",
+    "years_experience": 6.0,
+    "work_experience": [
+      {
+        "company": "Google",
+        "role": "Software Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 72,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Software Engineer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 6.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 5.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_021",
+    "name": "Blake_21",
+    "summary": "Professional working as Cloud Engineer.",
+    "years_experience": 7.0,
+    "work_experience": [
+      {
+        "company": "Meta",
+        "role": "Cloud Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 84,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Cloud Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 7.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 7.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_022",
+    "name": "Charlie_22",
+    "summary": "Professional working as Product Manager.",
+    "years_experience": 8.0,
+    "work_experience": [
+      {
+        "company": "Amazon",
+        "role": "Product Manager",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 96,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Product Manager tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 8.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 7.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_023",
+    "name": "Dani_23",
+    "summary": "Professional working as Python Backend Developer.",
+    "years_experience": 9.0,
+    "work_experience": [
+      {
+        "company": "OpenAI",
+        "role": "Python Backend Developer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 108,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Python Backend Developer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 9.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 8.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_024",
+    "name": "Eli_24",
+    "summary": "Professional working as Senior ML Engineer.",
+    "years_experience": 2.0,
+    "work_experience": [
+      {
+        "company": "Anthropic",
+        "role": "Senior ML Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 24,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Senior ML Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 2.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 2.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_025",
+    "name": "Frankie_25",
+    "summary": "Professional working as Data Scientist.",
+    "years_experience": 3.0,
+    "work_experience": [
+      {
+        "company": "Netflix",
+        "role": "Data Scientist",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 36,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Data Scientist tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 3.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 2.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_026",
+    "name": "Gaby_26",
+    "summary": "Professional working as Software Engineer.",
+    "years_experience": 4.0,
+    "work_experience": [
+      {
+        "company": "HuggingFace",
+        "role": "Software Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 48,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Software Engineer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 4.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 3.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_027",
+    "name": "Hal_27",
+    "summary": "Professional working as Cloud Engineer.",
+    "years_experience": 5.0,
+    "work_experience": [
+      {
+        "company": "Cohere",
+        "role": "Cloud Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 60,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Cloud Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 5.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 5.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_028",
+    "name": "Jordan_28",
+    "summary": "Professional working as Product Manager.",
+    "years_experience": 6.0,
+    "work_experience": [
+      {
+        "company": "Pinecone",
+        "role": "Product Manager",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 72,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Product Manager tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 6.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 5.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_029",
+    "name": "Kim_29",
+    "summary": "Professional working as Python Backend Developer.",
+    "years_experience": 7.0,
+    "work_experience": [
+      {
+        "company": "Qdrant",
+        "role": "Python Backend Developer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 84,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Python Backend Developer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 7.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 6.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_030",
+    "name": "Lee_30",
+    "summary": "Professional working as Senior ML Engineer.",
+    "years_experience": 8.0,
+    "work_experience": [
+      {
+        "company": "Google",
+        "role": "Senior ML Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 96,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Senior ML Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 8.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 8.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_031",
+    "name": "Morgan_31",
+    "summary": "Professional working as Data Scientist.",
+    "years_experience": 9.0,
+    "work_experience": [
+      {
+        "company": "Meta",
+        "role": "Data Scientist",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 108,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Data Scientist tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 9.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 8.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_032",
+    "name": "Taylor_32",
+    "summary": "Professional working as Software Engineer.",
+    "years_experience": 2.0,
+    "work_experience": [
+      {
+        "company": "Amazon",
+        "role": "Software Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 24,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Software Engineer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 2.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 1.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_033",
+    "name": "Sam_33",
+    "summary": "Professional working as Cloud Engineer.",
+    "years_experience": 3.0,
+    "work_experience": [
+      {
+        "company": "OpenAI",
+        "role": "Cloud Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 36,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Cloud Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 3.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 3.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_034",
+    "name": "Robin_34",
+    "summary": "Professional working as Product Manager.",
+    "years_experience": 4.0,
+    "work_experience": [
+      {
+        "company": "Anthropic",
+        "role": "Product Manager",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 48,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Product Manager tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 4.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 3.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_035",
+    "name": "Pat_35",
+    "summary": "Professional working as Python Backend Developer.",
+    "years_experience": 5.0,
+    "work_experience": [
+      {
+        "company": "Netflix",
+        "role": "Python Backend Developer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 60,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Python Backend Developer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 5.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 4.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_036",
+    "name": "Terry_36",
+    "summary": "Professional working as Senior ML Engineer.",
+    "years_experience": 6.0,
+    "work_experience": [
+      {
+        "company": "HuggingFace",
+        "role": "Senior ML Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 72,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Senior ML Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 6.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 6.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_037",
+    "name": "Kelly_37",
+    "summary": "Professional working as Data Scientist.",
+    "years_experience": 7.0,
+    "work_experience": [
+      {
+        "company": "Cohere",
+        "role": "Data Scientist",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 84,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Data Scientist tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 7.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 6.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_038",
+    "name": "Chris_38",
+    "summary": "Professional working as Software Engineer.",
+    "years_experience": 8.0,
+    "work_experience": [
+      {
+        "company": "Pinecone",
+        "role": "Software Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 96,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Software Engineer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 8.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 7.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_039",
+    "name": "Jamie_39",
+    "summary": "Professional working as Cloud Engineer.",
+    "years_experience": 9.0,
+    "work_experience": [
+      {
+        "company": "Qdrant",
+        "role": "Cloud Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 108,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Cloud Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 9.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 9.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_040",
+    "name": "Alex_40",
+    "summary": "Professional working as Product Manager.",
+    "years_experience": 2.0,
+    "work_experience": [
+      {
+        "company": "Google",
+        "role": "Product Manager",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 24,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Product Manager tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 2.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 1.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_041",
+    "name": "Blake_41",
+    "summary": "Professional working as Python Backend Developer.",
+    "years_experience": 3.0,
+    "work_experience": [
+      {
+        "company": "Meta",
+        "role": "Python Backend Developer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 36,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Python Backend Developer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 3.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 2.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_042",
+    "name": "Charlie_42",
+    "summary": "Professional working as Senior ML Engineer.",
+    "years_experience": 4.0,
+    "work_experience": [
+      {
+        "company": "Amazon",
+        "role": "Senior ML Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 48,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Senior ML Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 4.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 4.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_043",
+    "name": "Dani_43",
+    "summary": "Professional working as Data Scientist.",
+    "years_experience": 5.0,
+    "work_experience": [
+      {
+        "company": "OpenAI",
+        "role": "Data Scientist",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 60,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Data Scientist tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 5.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 4.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_044",
+    "name": "Eli_44",
+    "summary": "Professional working as Software Engineer.",
+    "years_experience": 6.0,
+    "work_experience": [
+      {
+        "company": "Anthropic",
+        "role": "Software Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 72,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Software Engineer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 6.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 5.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_045",
+    "name": "Frankie_45",
+    "summary": "Professional working as Cloud Engineer.",
+    "years_experience": 7.0,
+    "work_experience": [
+      {
+        "company": "Netflix",
+        "role": "Cloud Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 84,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Cloud Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 7.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 7.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_046",
+    "name": "Gaby_46",
+    "summary": "Professional working as Product Manager.",
+    "years_experience": 8.0,
+    "work_experience": [
+      {
+        "company": "HuggingFace",
+        "role": "Product Manager",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 96,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Product Manager tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 8.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 7.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_047",
+    "name": "Hal_47",
+    "summary": "Professional working as Python Backend Developer.",
+    "years_experience": 9.0,
+    "work_experience": [
+      {
+        "company": "Cohere",
+        "role": "Python Backend Developer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 108,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Python Backend Developer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 9.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 8.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_048",
+    "name": "Jordan_48",
+    "summary": "Professional working as Senior ML Engineer.",
+    "years_experience": 2.0,
+    "work_experience": [
+      {
+        "company": "Pinecone",
+        "role": "Senior ML Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 24,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Senior ML Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 2.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 2.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_049",
+    "name": "Kim_49",
+    "summary": "Professional working as Data Scientist.",
+    "years_experience": 3.0,
+    "work_experience": [
+      {
+        "company": "Qdrant",
+        "role": "Data Scientist",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 36,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Data Scientist tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 3.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 2.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_050",
+    "name": "Lee_50",
+    "summary": "Professional working as Software Engineer.",
+    "years_experience": 4.0,
+    "work_experience": [
+      {
+        "company": "Google",
+        "role": "Software Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 48,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Software Engineer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 4.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 3.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_051",
+    "name": "Morgan_51",
+    "summary": "Professional working as Cloud Engineer.",
+    "years_experience": 5.0,
+    "work_experience": [
+      {
+        "company": "Meta",
+        "role": "Cloud Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 60,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Cloud Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 5.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 5.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_052",
+    "name": "Taylor_52",
+    "summary": "Professional working as Product Manager.",
+    "years_experience": 6.0,
+    "work_experience": [
+      {
+        "company": "Amazon",
+        "role": "Product Manager",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 72,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Product Manager tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 6.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 5.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_053",
+    "name": "Sam_53",
+    "summary": "Professional working as Python Backend Developer.",
+    "years_experience": 7.0,
+    "work_experience": [
+      {
+        "company": "OpenAI",
+        "role": "Python Backend Developer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 84,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Python Backend Developer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 7.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 6.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_054",
+    "name": "Robin_54",
+    "summary": "Professional working as Senior ML Engineer.",
+    "years_experience": 8.0,
+    "work_experience": [
+      {
+        "company": "Anthropic",
+        "role": "Senior ML Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 96,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Senior ML Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 8.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 8.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_055",
+    "name": "Pat_55",
+    "summary": "Professional working as Data Scientist.",
+    "years_experience": 9.0,
+    "work_experience": [
+      {
+        "company": "Netflix",
+        "role": "Data Scientist",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 108,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Data Scientist tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 9.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 8.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_056",
+    "name": "Terry_56",
+    "summary": "Professional working as Software Engineer.",
+    "years_experience": 2.0,
+    "work_experience": [
+      {
+        "company": "HuggingFace",
+        "role": "Software Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 24,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Software Engineer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 2.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 1.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_057",
+    "name": "Kelly_57",
+    "summary": "Professional working as Cloud Engineer.",
+    "years_experience": 3.0,
+    "work_experience": [
+      {
+        "company": "Cohere",
+        "role": "Cloud Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 36,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Cloud Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 3.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 3.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_058",
+    "name": "Chris_58",
+    "summary": "Professional working as Product Manager.",
+    "years_experience": 4.0,
+    "work_experience": [
+      {
+        "company": "Pinecone",
+        "role": "Product Manager",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 48,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Product Manager tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 4.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 3.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_059",
+    "name": "Jamie_59",
+    "summary": "Professional working as Python Backend Developer.",
+    "years_experience": 5.0,
+    "work_experience": [
+      {
+        "company": "Qdrant",
+        "role": "Python Backend Developer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 60,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Python Backend Developer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 5.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 4.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_060",
+    "name": "Alex_60",
+    "summary": "Professional working as Senior ML Engineer.",
+    "years_experience": 6.0,
+    "work_experience": [
+      {
+        "company": "Google",
+        "role": "Senior ML Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 72,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Senior ML Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 6.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 6.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_061",
+    "name": "Blake_61",
+    "summary": "Professional working as Data Scientist.",
+    "years_experience": 7.0,
+    "work_experience": [
+      {
+        "company": "Meta",
+        "role": "Data Scientist",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 84,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Data Scientist tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 7.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 6.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_062",
+    "name": "Charlie_62",
+    "summary": "Professional working as Software Engineer.",
+    "years_experience": 8.0,
+    "work_experience": [
+      {
+        "company": "Amazon",
+        "role": "Software Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 96,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Software Engineer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 8.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 7.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_063",
+    "name": "Dani_63",
+    "summary": "Professional working as Cloud Engineer.",
+    "years_experience": 9.0,
+    "work_experience": [
+      {
+        "company": "OpenAI",
+        "role": "Cloud Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 108,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Cloud Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 9.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 9.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_064",
+    "name": "Eli_64",
+    "summary": "Professional working as Product Manager.",
+    "years_experience": 2.0,
+    "work_experience": [
+      {
+        "company": "Anthropic",
+        "role": "Product Manager",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 24,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Product Manager tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 2.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 1.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_065",
+    "name": "Frankie_65",
+    "summary": "Professional working as Python Backend Developer.",
+    "years_experience": 3.0,
+    "work_experience": [
+      {
+        "company": "Netflix",
+        "role": "Python Backend Developer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 36,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Python Backend Developer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 3.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 2.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_066",
+    "name": "Gaby_66",
+    "summary": "Professional working as Senior ML Engineer.",
+    "years_experience": 4.0,
+    "work_experience": [
+      {
+        "company": "HuggingFace",
+        "role": "Senior ML Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 48,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Senior ML Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 4.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 4.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_067",
+    "name": "Hal_67",
+    "summary": "Professional working as Data Scientist.",
+    "years_experience": 5.0,
+    "work_experience": [
+      {
+        "company": "Cohere",
+        "role": "Data Scientist",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 60,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Data Scientist tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 5.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 4.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_068",
+    "name": "Jordan_68",
+    "summary": "Professional working as Software Engineer.",
+    "years_experience": 6.0,
+    "work_experience": [
+      {
+        "company": "Pinecone",
+        "role": "Software Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 72,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Software Engineer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 6.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 5.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_069",
+    "name": "Kim_69",
+    "summary": "Professional working as Cloud Engineer.",
+    "years_experience": 7.0,
+    "work_experience": [
+      {
+        "company": "Qdrant",
+        "role": "Cloud Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 84,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Cloud Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 7.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 7.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_070",
+    "name": "Lee_70",
+    "summary": "Professional working as Product Manager.",
+    "years_experience": 8.0,
+    "work_experience": [
+      {
+        "company": "Google",
+        "role": "Product Manager",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 96,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Product Manager tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 8.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 7.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_071",
+    "name": "Morgan_71",
+    "summary": "Professional working as Python Backend Developer.",
+    "years_experience": 9.0,
+    "work_experience": [
+      {
+        "company": "Meta",
+        "role": "Python Backend Developer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 108,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Python Backend Developer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 9.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 8.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_072",
+    "name": "Taylor_72",
+    "summary": "Professional working as Senior ML Engineer.",
+    "years_experience": 2.0,
+    "work_experience": [
+      {
+        "company": "Amazon",
+        "role": "Senior ML Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 24,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Senior ML Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 2.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 2.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_073",
+    "name": "Sam_73",
+    "summary": "Professional working as Data Scientist.",
+    "years_experience": 3.0,
+    "work_experience": [
+      {
+        "company": "OpenAI",
+        "role": "Data Scientist",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 36,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Data Scientist tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 3.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 2.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_074",
+    "name": "Robin_74",
+    "summary": "Professional working as Software Engineer.",
+    "years_experience": 4.0,
+    "work_experience": [
+      {
+        "company": "Anthropic",
+        "role": "Software Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 48,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Software Engineer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 4.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 3.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_075",
+    "name": "Pat_75",
+    "summary": "Professional working as Cloud Engineer.",
+    "years_experience": 5.0,
+    "work_experience": [
+      {
+        "company": "Netflix",
+        "role": "Cloud Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 60,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Cloud Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 5.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 5.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_076",
+    "name": "Terry_76",
+    "summary": "Professional working as Product Manager.",
+    "years_experience": 6.0,
+    "work_experience": [
+      {
+        "company": "HuggingFace",
+        "role": "Product Manager",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 72,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Product Manager tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 6.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 5.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_077",
+    "name": "Kelly_77",
+    "summary": "Professional working as Python Backend Developer.",
+    "years_experience": 7.0,
+    "work_experience": [
+      {
+        "company": "Cohere",
+        "role": "Python Backend Developer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 84,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Python Backend Developer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 7.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 6.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_078",
+    "name": "Chris_78",
+    "summary": "Professional working as Senior ML Engineer.",
+    "years_experience": 8.0,
+    "work_experience": [
+      {
+        "company": "Pinecone",
+        "role": "Senior ML Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 96,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Senior ML Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 8.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 8.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_079",
+    "name": "Jamie_79",
+    "summary": "Professional working as Data Scientist.",
+    "years_experience": 9.0,
+    "work_experience": [
+      {
+        "company": "Qdrant",
+        "role": "Data Scientist",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 108,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Data Scientist tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 9.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 8.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_080",
+    "name": "Alex_80",
+    "summary": "Professional working as Software Engineer.",
+    "years_experience": 2.0,
+    "work_experience": [
+      {
+        "company": "Google",
+        "role": "Software Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 24,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Software Engineer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 2.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 1.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_081",
+    "name": "Blake_81",
+    "summary": "Professional working as Cloud Engineer.",
+    "years_experience": 3.0,
+    "work_experience": [
+      {
+        "company": "Meta",
+        "role": "Cloud Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 36,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Cloud Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 3.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 3.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_082",
+    "name": "Charlie_82",
+    "summary": "Professional working as Product Manager.",
+    "years_experience": 4.0,
+    "work_experience": [
+      {
+        "company": "Amazon",
+        "role": "Product Manager",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 48,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Product Manager tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 4.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 3.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_083",
+    "name": "Dani_83",
+    "summary": "Professional working as Python Backend Developer.",
+    "years_experience": 5.0,
+    "work_experience": [
+      {
+        "company": "OpenAI",
+        "role": "Python Backend Developer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 60,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Python Backend Developer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 5.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 4.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_084",
+    "name": "Eli_84",
+    "summary": "Professional working as Senior ML Engineer.",
+    "years_experience": 6.0,
+    "work_experience": [
+      {
+        "company": "Anthropic",
+        "role": "Senior ML Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 72,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Senior ML Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 6.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 6.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_085",
+    "name": "Frankie_85",
+    "summary": "Professional working as Data Scientist.",
+    "years_experience": 7.0,
+    "work_experience": [
+      {
+        "company": "Netflix",
+        "role": "Data Scientist",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 84,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Data Scientist tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 7.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 6.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_086",
+    "name": "Gaby_86",
+    "summary": "Professional working as Software Engineer.",
+    "years_experience": 8.0,
+    "work_experience": [
+      {
+        "company": "HuggingFace",
+        "role": "Software Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 96,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Software Engineer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 8.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 7.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_087",
+    "name": "Hal_87",
+    "summary": "Professional working as Cloud Engineer.",
+    "years_experience": 9.0,
+    "work_experience": [
+      {
+        "company": "Cohere",
+        "role": "Cloud Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 108,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Cloud Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 9.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 9.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_088",
+    "name": "Jordan_88",
+    "summary": "Professional working as Product Manager.",
+    "years_experience": 2.0,
+    "work_experience": [
+      {
+        "company": "Pinecone",
+        "role": "Product Manager",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 24,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Product Manager tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 2.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 1.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_089",
+    "name": "Kim_89",
+    "summary": "Professional working as Python Backend Developer.",
+    "years_experience": 3.0,
+    "work_experience": [
+      {
+        "company": "Qdrant",
+        "role": "Python Backend Developer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 36,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Python Backend Developer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 3.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 2.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_090",
+    "name": "Lee_90",
+    "summary": "Professional working as Senior ML Engineer.",
+    "years_experience": 4.0,
+    "work_experience": [
+      {
+        "company": "Google",
+        "role": "Senior ML Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 48,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Senior ML Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 4.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 4.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_091",
+    "name": "Morgan_91",
+    "summary": "Professional working as Data Scientist.",
+    "years_experience": 5.0,
+    "work_experience": [
+      {
+        "company": "Meta",
+        "role": "Data Scientist",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 60,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Data Scientist tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 5.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 4.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_092",
+    "name": "Taylor_92",
+    "summary": "Professional working as Software Engineer.",
+    "years_experience": 6.0,
+    "work_experience": [
+      {
+        "company": "Amazon",
+        "role": "Software Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 72,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Software Engineer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 6.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 5.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_093",
+    "name": "Sam_93",
+    "summary": "Professional working as Cloud Engineer.",
+    "years_experience": 7.0,
+    "work_experience": [
+      {
+        "company": "OpenAI",
+        "role": "Cloud Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 84,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Cloud Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 7.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 7.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_094",
+    "name": "Robin_94",
+    "summary": "Professional working as Product Manager.",
+    "years_experience": 8.0,
+    "work_experience": [
+      {
+        "company": "Anthropic",
+        "role": "Product Manager",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 96,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Product Manager tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 8.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 7.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_095",
+    "name": "Pat_95",
+    "summary": "Professional working as Python Backend Developer.",
+    "years_experience": 9.0,
+    "work_experience": [
+      {
+        "company": "Netflix",
+        "role": "Python Backend Developer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 108,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Python Backend Developer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 9.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 8.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_096",
+    "name": "Terry_96",
+    "summary": "Professional working as Senior ML Engineer.",
+    "years_experience": 2.0,
+    "work_experience": [
+      {
+        "company": "HuggingFace",
+        "role": "Senior ML Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 24,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Senior ML Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 2.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 2.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_097",
+    "name": "Kelly_97",
+    "summary": "Professional working as Data Scientist.",
+    "years_experience": 3.0,
+    "work_experience": [
+      {
+        "company": "Cohere",
+        "role": "Data Scientist",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 36,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Data Scientist tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 3.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 2.0,
+        "proficiency": "intermediate"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_098",
+    "name": "Chris_98",
+    "summary": "Professional working as Software Engineer.",
+    "years_experience": 4.0,
+    "work_experience": [
+      {
+        "company": "Pinecone",
+        "role": "Software Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 48,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Software Engineer tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 4.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 3.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_099",
+    "name": "Jamie_99",
+    "summary": "Professional working as Cloud Engineer.",
+    "years_experience": 5.0,
+    "work_experience": [
+      {
+        "company": "Qdrant",
+        "role": "Cloud Engineer",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 60,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked as Cloud Engineer. Primarily focused on frontend JavaScript engineering and project management.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "years": 5.0,
+        "proficiency": "expert"
+      },
+      {
+        "name": "HTML/CSS",
+        "years": 5.0,
+        "proficiency": "expert"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  },
+  {
+    "id": "cand_100",
+    "name": "Alex_100",
+    "summary": "Professional working as Product Manager.",
+    "years_experience": 6.0,
+    "work_experience": [
+      {
+        "company": "Google",
+        "role": "Product Manager",
+        "industry": "Technology",
+        "company_size": "Medium",
+        "duration_months": 72,
+        "start_date": "2022-01",
+        "end_date": "present",
+        "description": "Worked on Product Manager tasks. Developed models in Python. Used PyTorch. Built APIs using FastAPI. Also implemented RAG with Milvus vector search.",
+        "is_current": true
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "years": 6.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "PyTorch",
+        "years": 5.0,
+        "proficiency": "intermediate"
+      },
+      {
+        "name": "Milvus",
+        "years": 1.5,
+        "proficiency": "beginner"
+      }
+    ],
+    "education": [],
+    "certifications": [],
+    "assessments": [],
+    "languages": [],
+    "behavioral_signals": {}
+  }
+]
